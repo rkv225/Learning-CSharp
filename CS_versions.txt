@@ -1,0 +1,223 @@
+Source Link: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history
+
+
+C# version 10
+Released November, 2021
+
+C# 10 adds the following features and enhancements to the C# language:
+
+Record structs
+Improvements of structure types
+Interpolated string handlers
+global using directives
+File-scoped namespace declaration
+Extended property patterns
+Improvements on lambda expressions
+Allow const interpolated strings
+Record types can seal ToString()
+Improved definite assignment
+Allow both assignment and declaration in the same deconstruction
+Allow AsyncMethodBuilder attribute on methods
+CallerArgumentExpression attribute
+Enhanced #line pragma
+More features were available in preview mode. In order to use these features, you must set <LangVersion> to Preview in your project:
+
+Generic attributes later in this article.
+static abstract members in interfaces
+C# 10 continues work on themes of removing ceremony, separating data from algorithms, and improved performance for the .NET Runtime.
+
+Many of the features mean you'll type less code to express the same concepts. Record structs synthesize many of the same methods that record classes do. Structs and anonymous types support with expressions. Global using directives and file scoped namespace declarations mean you express dependencies and namespace organization more clearly. Lambda improvements makes it easier to declare lambda expressions where they're used. New property patterns and deconstruction improvements create more concise code.
+
+The new interpolated string handlers and AsyncMethodBuilder behavior can improve performance. These language features were applied in the .NET Runtime to achieve performance improvements in .NET 6.
+
+C# 10 also marks more of a shift to the yearly cadence for .NET releases. Because not every feature can be completed in a yearly timeframe, you can try a couple of "preview" features in C# 10. Both generic attributes and static abstract members in interfaces can be used, but these preview features may change before their final release.
+
+C# version 9
+Released November, 2020
+
+C# 9 was released with .NET 5. It's the default language version for any assembly that targets the .NET 5 release. It contains the following new and enhanced features:
+
+Records
+Init only setters
+Top-level statements
+Pattern matching enhancements: relational patterns and logical patterns
+Performance and interop
+Native sized integers
+Function pointers
+Suppress emitting localsinit flag
+Module initializers
+New features for partial methods
+Fit and finish features
+Target-typed new expressions
+static anonymous functions
+Target-typed conditional expressions
+Covariant return types
+Extension GetEnumerator support for foreach loops
+Lambda discard parameters
+Attributes on local functions
+C# 9 continues three of the themes from previous releases: removing ceremony, separating data from algorithms, and providing more patterns in more places.
+
+Top level statements means your main program is simpler to read. There's less need for ceremony: a namespace, a Program class, and static void Main() are all unnecessary.
+
+The introduction of records provides a concise syntax for reference types that follow value semantics for equality. You'll use these types to define data containers that typically define minimal behavior. Init-only setters provide the capability for non-destructive mutation (with expressions) in records. C# 9 also adds covariant return types so that derived records can override virtual methods and return a type derived from the base method's return type.
+
+The pattern matching capabilities have been expanded in several ways. Numeric types now support range patterns. Patterns can be combined using and, or, and not patterns. Parentheses can be added to clarify more complex patterns:
+
+C# 9 includes new pattern matching improvements:
+
+Type patterns match an object matches a particular type
+Parenthesized patterns enforce or emphasize the precedence of pattern combinations
+Conjunctive and patterns require both patterns to match
+Disjunctive or patterns require either pattern to match
+Negated not patterns require that a pattern doesn't match
+Relational patterns require the input be less than, greater than, less than or equal, or greater than or equal to a given constant.
+These patterns enrich the syntax for patterns. Consider these examples:
+
+C#
+
+Copy
+public static bool IsLetter(this char c) =>
+    c is >= 'a' and <= 'z' or >= 'A' and <= 'Z';
+With optional parentheses to make it clear that and has higher precedence than or:
+
+C#
+
+Copy
+public static bool IsLetterOrSeparator(this char c) =>
+    c is (>= 'a' and <= 'z') or (>= 'A' and <= 'Z') or '.' or ',';
+One of the most common uses is a new syntax for a null check:
+
+C#
+
+Copy
+if (e is not null)
+{
+    // ...
+}
+Any of these patterns can be used in any context where patterns are allowed: is pattern expressions, switch expressions, nested patterns, and the pattern of a switch statement's case label.
+
+Another set of features supports high-performance computing in C#:
+
+The nint and nuint types model the native-size integer types on the target CPU.
+Function pointers provide delegate-like functionality while avoiding the allocations necessary to create a delegate object.
+The localsinit instruction can be omitted to save instructions.
+Performance and interop
+Another set of improvements supports scenarios where code generators add functionality:
+
+Module initializers are methods that the runtime calls when an assembly loads.
+Partial methods support new accessibly modifiers and non-void return types. In those cases, an implementation must be provided.
+Fit and finish features
+C# 9 adds many other small features that improve developer productivity, both writing and reading code:
+
+Target-type new expressions
+static anonymous functions
+Target-type conditional expressions
+Extension GetEnumerator() support for foreach loops
+Lambda expressions can declare discard parameters
+Attributes can be applied to local functions
+The C# 9 release continues the work to keep C# a modern, general-purpose programming language. Features continue to support modern workloads and application types.
+
+C# version 8.0
+Released September, 2019
+
+C# 8.0 is the first major C# release that specifically targets .NET Core. Some features rely on new CLR capabilities, others on library types added only in .NET Core. C# 8.0 adds the following features and enhancements to the C# language:
+
+Readonly members
+Default interface methods
+Pattern matching enhancements:
+Switch expressions
+Property patterns
+Tuple patterns
+Positional patterns
+Using declarations
+Static local functions
+Disposable ref structs
+Nullable reference types
+Asynchronous streams
+Indices and ranges
+Null-coalescing assignment
+Unmanaged constructed types
+Stackalloc in nested expressions
+Enhancement of interpolated verbatim strings
+Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges and indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler, is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
+
+C# version 7.3
+Released May, 2018
+
+There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. New compiler options were also added in this release.
+
+The following new features support the theme of better performance for safe code:
+
+You can access fixed fields without pinning.
+You can reassign ref local variables.
+You can use initializers on stackalloc arrays.
+You can use fixed statements with any type that supports a pattern.
+You can use more generic constraints.
+The following enhancements were made to existing features:
+
+You can test == and != with tuple types.
+You can use expression variables in more locations.
+You may attach attributes to the backing field of auto-implemented properties.
+Method resolution when arguments differ by in has been improved.
+Overload resolution now has fewer ambiguous cases.
+The new compiler options are:
+
+-publicsign to enable Open Source Software (OSS) signing of assemblies.
+-pathmap to provide a mapping for source directories.
+C# version 7.2
+Released November, 2017
+
+C# 7.2 added several small language features:
+
+Initializers on stackalloc arrays.
+Use fixed statements with any type that supports a pattern.
+Access fixed fields without pinning.
+Reassign ref local variables.
+Declare readonly struct types, to indicate that a struct is immutable and should be passed as an in parameter to its member methods.
+Add the in modifier on parameters, to specify that an argument is passed by reference but not modified by the called method.
+Use the ref readonly modifier on method returns, to indicate that a method returns its value by reference but doesn't allow writes to that object.
+Declare ref struct types, to indicate that a struct type accesses managed memory directly and must always be stack allocated.
+Use additional generic constraints.
+Non-trailing named arguments
+Named arguments can be followed by positional arguments.
+Leading underscores in numeric literals
+Numeric literals can now have leading underscores before any printed digits.
+private protected access modifier
+The private protected access modifier enables access for derived classes in the same assembly.
+Conditional ref expressions
+The result of a conditional expression (?:) can now be a reference.
+C# version 7.1
+Released August, 2017
+
+C# started releasing point releases with C# 7.1. This version added the language version selection configuration element, three new language features, and new compiler behavior.
+
+The new language features in this release are:
+
+async Main method
+The entry point for an application can have the async modifier.
+default literal expressions
+You can use default literal expressions in default value expressions when the target type can be inferred.
+Inferred tuple element names
+The names of tuple elements can be inferred from tuple initialization in many cases.
+Pattern matching on generic type parameters
+You can use pattern match expressions on variables whose type is a generic type parameter.
+Finally, the compiler has two options -refout and -refonly that control reference assembly generation
+
+C# version 7.0
+Released March, 2017
+
+C# version 7.0 was released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0. Here are some of the new features:
+
+Out variables
+Tuples and deconstruction
+Pattern matching
+Local functions
+Expanded expression bodied members
+Ref locals
+Ref returns
+Other features included:
+
+Discards
+Binary Literals and Digit Separators
+Throw expressions
+All of these features offer new capabilities for developers and the opportunity to write cleaner code than ever. A highlight is condensing the declaration of variables to use with the out keyword and by allowing multiple return values via tuple. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability. These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.
