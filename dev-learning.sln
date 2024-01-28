@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparable", "IComparable\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparer", "IComparer\IComparer.csproj", "{C064CFA6-8493-4C6F-84AA-2541D1A04F3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "garbage-collection", "garbage-collection\garbage-collection.csproj", "{EE211E23-33DF-4DEB-9BE9-7DE1C40ED75B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -141,6 +143,10 @@ Global
 		{C064CFA6-8493-4C6F-84AA-2541D1A04F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C064CFA6-8493-4C6F-84AA-2541D1A04F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C064CFA6-8493-4C6F-84AA-2541D1A04F3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE211E23-33DF-4DEB-9BE9-7DE1C40ED75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE211E23-33DF-4DEB-9BE9-7DE1C40ED75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE211E23-33DF-4DEB-9BE9-7DE1C40ED75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE211E23-33DF-4DEB-9BE9-7DE1C40ED75B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
