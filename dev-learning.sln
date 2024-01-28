@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEquatable", "IEquatable\IE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEqualityComparer", "IEqualityComparer\IEqualityComparer.csproj", "{05CD2DB2-2791-4A98-827A-9404474814DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparable", "IComparable\IComparable.csproj", "{920595F9-CC80-45C3-992A-3672115682CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparer", "IComparer\IComparer.csproj", "{C064CFA6-8493-4C6F-84AA-2541D1A04F3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{05CD2DB2-2791-4A98-827A-9404474814DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05CD2DB2-2791-4A98-827A-9404474814DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05CD2DB2-2791-4A98-827A-9404474814DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{920595F9-CC80-45C3-992A-3672115682CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{920595F9-CC80-45C3-992A-3672115682CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{920595F9-CC80-45C3-992A-3672115682CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{920595F9-CC80-45C3-992A-3672115682CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C064CFA6-8493-4C6F-84AA-2541D1A04F3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C064CFA6-8493-4C6F-84AA-2541D1A04F3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C064CFA6-8493-4C6F-84AA-2541D1A04F3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C064CFA6-8493-4C6F-84AA-2541D1A04F3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
