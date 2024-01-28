@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+In C#, attributes provide a way to add metadata or additional information to program entities like classes, methods, properties, parameters, etc. Attributes are a form of declarative information that can be retrieved at runtime using reflection. They can be used to convey information to tools, libraries, or other code elements about how to treat the annotated code element.
+*/
+
+using System;
 
 // Custom attribute for validation
 [AttributeUsage(AttributeTargets.Property, AllowMultiple = false)]

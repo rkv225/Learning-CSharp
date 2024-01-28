@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iasyncenumerable", "iasynce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "attributes", "attributes\attributes.csproj", "{17CBCD5D-10FE-4BCB-BC7A-4E0B315EE825}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reflection", "reflection\reflection.csproj", "{83A286A1-E7CB-4B75-BBEC-058307283887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{17CBCD5D-10FE-4BCB-BC7A-4E0B315EE825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17CBCD5D-10FE-4BCB-BC7A-4E0B315EE825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17CBCD5D-10FE-4BCB-BC7A-4E0B315EE825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A286A1-E7CB-4B75-BBEC-058307283887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A286A1-E7CB-4B75-BBEC-058307283887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A286A1-E7CB-4B75-BBEC-058307283887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A286A1-E7CB-4B75-BBEC-058307283887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
