@@ -71,9 +71,9 @@
 
         // CountdownEvent
         Console.WriteLine("Countdown Event");
-        new Thread (SaySomething).Start ("I am thread 1");
-        new Thread (SaySomething).Start ("I am thread 2");
-        new Thread (SaySomething).Start ("I am thread 3");
+        new Thread (() => SaySomething("I am thread 1")).Start ();
+        new Thread (() => SaySomething("I am thread 2")).Start ();
+        new Thread (() => SaySomething("I am thread 3")).Start ();
         countdown.Wait(); // Blocks until Signal has been called 3 times
         Console.WriteLine ("All threads have finished speaking!");
     }
