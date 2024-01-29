@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mutex", "mutex\mutex.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "semaphore", "semaphore\semaphore.csproj", "{37503A4F-5A53-4716-A443-FE60A49CDDA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "signaling", "signaling\signaling.csproj", "{ED90561B-CDEB-4450-85DB-C10F583EF1B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{37503A4F-5A53-4716-A443-FE60A49CDDA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37503A4F-5A53-4716-A443-FE60A49CDDA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37503A4F-5A53-4716-A443-FE60A49CDDA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED90561B-CDEB-4450-85DB-C10F583EF1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED90561B-CDEB-4450-85DB-C10F583EF1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED90561B-CDEB-4450-85DB-C10F583EF1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED90561B-CDEB-4450-85DB-C10F583EF1B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
