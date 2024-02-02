@@ -1,5 +1,10 @@
 ﻿using System;
 
+// const string interpolation introduced in C# 10
+const string greeting = "Hello";
+const string message = $"{greeting}, world";
+Console.WriteLine(message);
+
 // Indices and Ranges in C# 8.0
 char[] vowels = new char[] {'a','e','i','o','u'};
 char lastElement = vowels [^1]; // 'u'
