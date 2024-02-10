@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "producer-consumer-problem",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dining-philosopher", "dining-philosopher\dining-philosopher.csproj", "{26108593-4BCB-4884-95EE-B62E9305E171}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankerAlgorithm", "BankerAlgorithm\BankerAlgorithm.csproj", "{87D5675A-D2D0-449A-8CC1-4297DD8A133C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{26108593-4BCB-4884-95EE-B62E9305E171}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26108593-4BCB-4884-95EE-B62E9305E171}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26108593-4BCB-4884-95EE-B62E9305E171}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87D5675A-D2D0-449A-8CC1-4297DD8A133C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D5675A-D2D0-449A-8CC1-4297DD8A133C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D5675A-D2D0-449A-8CC1-4297DD8A133C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D5675A-D2D0-449A-8CC1-4297DD8A133C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
