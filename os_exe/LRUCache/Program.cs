@@ -1,4 +1,19 @@
-﻿// In this cache repacement policy, the key that is least recently used will be evicted in case of page fault occurs and no free frame is present.
+﻿/*
+Problem: Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
+
+Solution: 
+In this cache repacement policy, the key that is least recently used will be evicted in case of page fault occurs and no free frame is present.
+We use a dictionary and a doubly linked list. 
+We keep the values in dictionary.
+If an existing value is put or get, remove from doubly linked list and re-insert at front. also update the dictionary to point to correct place 
+else add until capacity allow
+or finally remove the last element in doubly linked list and also remove from dictionary and repeat the process of inserting
+
+Time Complexity: Get: O(1) and Put: O(1) 
+Space Complecity: O(capacity)
+
+Link: https://leetcode.com/problems/lru-cache/
+*/
 public class Node<T>
 {
     public T Key;
