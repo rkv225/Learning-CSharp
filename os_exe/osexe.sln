@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankerAlgorithm", "BankerAl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRUCache", "LRUCache\LRUCache.csproj", "{32F02732-BF9E-45D2-99C6-E74A86A2549B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LFUCache", "LFUCache\LFUCache.csproj", "{96D56339-5D5E-44A3-95FF-E6CB9B9EBB0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{32F02732-BF9E-45D2-99C6-E74A86A2549B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32F02732-BF9E-45D2-99C6-E74A86A2549B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32F02732-BF9E-45D2-99C6-E74A86A2549B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96D56339-5D5E-44A3-95FF-E6CB9B9EBB0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96D56339-5D5E-44A3-95FF-E6CB9B9EBB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96D56339-5D5E-44A3-95FF-E6CB9B9EBB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96D56339-5D5E-44A3-95FF-E6CB9B9EBB0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
